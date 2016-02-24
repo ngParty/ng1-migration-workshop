@@ -14,12 +14,14 @@
     "karma-jasmine": "^0.3.6",
     "protractor": "^2.1.0",
     "shelljs": "^0.2.6",
-    "tmp": "0.0.23"
+    "tmp": "0.0.23",
+    "typescript": "1.8.2"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "tsc:init": "tsc --init",
+    "clean": "rm -rf ts-output",
     "prestart": "npm install",
-    "start": "http-server -a 0.0.0.0 -p 8000",
+    "start": "npm run clean && tsc && http-server -a 0.0.0.0 -p 8000",
     "pretest": "npm install",
     "test": "karma start test/karma.conf.js",
     "test-single-run": "karma start test/karma.conf.js  --single-run",

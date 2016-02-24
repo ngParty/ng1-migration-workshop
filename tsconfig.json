@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "ts-output",
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

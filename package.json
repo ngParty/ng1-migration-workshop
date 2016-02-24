@@ -13,13 +13,15 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.6",
     "protractor": "^2.1.0",
+    "rimraf": "^2.5.2",
     "shelljs": "^0.2.6",
-    "tmp": "0.0.23"
+    "tmp": "0.0.23",
+    "typescript": "1.8.2"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "clean": "rimraf ts-output",
     "prestart": "npm install",
-    "start": "http-server -a 0.0.0.0 -p 8000",
+    "start": "npm run clean && tsc && http-server -a 0.0.0.0 -p 8000",
     "pretest": "npm install",
     "test": "karma start test/karma.conf.js",
     "test-single-run": "karma start test/karma.conf.js  --single-run",

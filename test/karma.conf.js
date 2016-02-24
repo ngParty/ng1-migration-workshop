@@ -9,9 +9,9 @@ module.exports = function(config){
       'node_modules/angular-resource/angular-resource.js',
       'node_modules/angular-animate/angular-animate.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'app/js/**/*.module.js',
-      'app/js/**/*.!(module).js',
-      'test/unit/**/*.js'
+      'ts-output/app/js/**/*.module.js',
+      'ts-output/app/js/**/*.!(module).js',
+      'ts-output/test/unit/**/*.js'
     ],
 
     autoWatch : true,

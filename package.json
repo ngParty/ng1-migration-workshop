@@ -15,10 +15,12 @@
     "protractor": "^2.1.0",
     "shelljs": "^0.2.6",
     "tmp": "0.0.23",
-    "typescript": "1.8.2"
+    "typescript": "1.8.2",
+    "typings": "0.6.8"
   },
   "scripts": {
     "tsc:init": "tsc --init",
+    "typings": "typings",
     "clean": "rm -rf ts-output",
     "prestart": "npm install",
     "start": "npm run clean && tsc && http-server -a 0.0.0.0 -p 8000",

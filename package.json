@@ -6,7 +6,10 @@
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.6.1",
+    "copy-webpack-plugin": "1.1.1",
+    "css-loader": "0.23.1",
+    "file-loader": "0.8.5",
+    "html-webpack-plugin": "2.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
@@ -14,15 +17,24 @@
     "karma-jasmine": "^0.3.6",
     "protractor": "^2.1.0",
     "rimraf": "^2.5.2",
+    "raw-loader": "0.5.1",
     "shelljs": "^0.2.6",
+    "style-loader": "0.13.0",
     "tmp": "0.0.23",
+    "ts-loader": "0.8.1",
     "typescript": "1.8.2",
-    "typings": "0.6.8"
+    "typings": "0.6.8",
+    "url-loader": "0.5.7",
+    "webpack": "1.12.14",
+    "webpack-dev-server": "1.14.1"
+  },
+  "config": {
+    "port": "9000"
   },
   "scripts": {
     "clean": "rimraf ts-output",
     "prestart": "npm install",
-    "start": "npm run clean && tsc && http-server -a 0.0.0.0 -p 8000",
+    "start": "webpack-dev-server --port 9000 --watch --colors --inline --hot --content-base app/",
     "pretest": "npm install",
     "test": "karma start test/karma.conf.js",
     "test-single-run": "karma start test/karma.conf.js  --single-run",

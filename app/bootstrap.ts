@@ -6,12 +6,7 @@ import 'jquery';
 import { bootstrap } from 'ng-metadata/platform';
 import { PhonecatApp } from './js/app.module';
 
-import 'angular-resource';
 import 'angular-animate';
-
-import './js/core/core.module'
-import './js/core/phone.factory'
-import './js/core/checkmark.filter'
 
 import './js/phone_detail/phone_detail.module'
 import './js/phone_detail/phone_detail.controller'

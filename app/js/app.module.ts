@@ -1,5 +1,6 @@
 import * as angular from 'angular';
 import * as ngRoute from 'angular-route';
+import { CoreModule } from './core/core.module';
 import { configure } from './app.config';
 
 /* App Module */
@@ -7,7 +8,7 @@ import { configure } from './app.config';
 export const PhonecatApp = angular
   .module( 'phonecatApp', [
     ngRoute,
-    'phonecat.core',
+    CoreModule,
     'phonecat.phoneList',
     'phonecat.phoneDetail'
   ] )

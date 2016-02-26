@@ -2,6 +2,9 @@
 
 angular.module('phonecat.phoneList').controller('PhoneListCtrl',
   ['Phone', function (Phone) {
-    this.phones = Phone.query();
+    var $ctrl = this;
+    Phone.query().then(function(phones){
+      $ctrl.phones = phones;
+    });
     this.orderProp = 'age';
   }]);

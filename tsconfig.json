@@ -5,7 +5,9 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "outDir": "ts-output",
-    "allowJs": true
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules",

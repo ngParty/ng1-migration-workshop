@@ -3,7 +3,7 @@ import './css/app.css';
 import './css/animations.css';
 
 import 'jquery';
-import * as angular from 'angular';
+import { bootstrap } from 'ng-metadata/platform';
 import { PhonecatApp } from './js/app.module';
 
 import 'angular-resource';
@@ -22,8 +22,5 @@ import './js/phone_list/phone_list.module'
 import './js/phone_list/phone_list.controller'
 import './js/phone_list/phone_list.component'
 
-
-document.addEventListener( 'DOMContentLoaded', ()=> {
-  angular.bootstrap( document, [ PhonecatApp.name ] );
-} );
+bootstrap( PhonecatApp );
 

@@ -12,6 +12,15 @@
   "exclude": [
     "node_modules",
     "typings/main",
-    "typings/main.d.ts"
+    "typings/main.d.ts",
+    "scripts",
+    "ts-output",
+    "webpack.config.js",
+    // old tests
+    "test",
+    // new karma config
+    "karma.conf.js",
+    // main test bundle - webpack specific
+    "spec.bundle.js"
   ]
 }

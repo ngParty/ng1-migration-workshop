@@ -1,6 +1,6 @@
-'use strict';
+import * as jQuery from 'jquery';
 
-angular.module('phonecat.phoneDetail').animation('.phone', function() {
+export function phoneAnimation() {
 
   var animateUp = function(element, className, done) {
     if(className != 'active') {
@@ -22,7 +22,7 @@ angular.module('phonecat.phoneDetail').animation('.phone', function() {
         element.stop();
       }
     };
-  }
+  };
 
   var animateDown = function(element, className, done) {
     if(className != 'active') {
@@ -43,10 +43,11 @@ angular.module('phonecat.phoneDetail').animation('.phone', function() {
         element.stop();
       }
     };
-  }
+  };
 
   return {
     addClass: animateUp,
     removeClass: animateDown
   };
-});
+
+}

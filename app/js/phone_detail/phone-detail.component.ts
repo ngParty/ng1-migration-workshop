@@ -18,7 +18,7 @@ export class PhoneDetailComponent {
 
   constructor(
     @Inject( '$routeParams' ) private $routeParams: PhoneRouteParams,
-    @Inject( 'Phone' ) private phoneSvc: PhoneService
+    @Inject( PhoneService ) private phoneSvc: PhoneService
   ) {
     phoneSvc.get( $routeParams.phoneId )
       .then( phone => {

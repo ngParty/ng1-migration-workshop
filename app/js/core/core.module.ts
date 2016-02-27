@@ -6,5 +6,5 @@ import { PhoneService } from './phone.service';
 export const CoreModule = angular
   .module( 'phonecat.core', [] )
   .filter( ...provide( CheckmarkPipe ) )
-  .service( ...provide( 'Phone', { useClass: PhoneService } ) )
+  .service( ...provide( PhoneService ) )
   .name;

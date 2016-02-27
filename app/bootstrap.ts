@@ -13,9 +13,5 @@ import './js/phone_detail/phone_detail.controller'
 import './js/phone_detail/phone_detail.component'
 import './js/phone_detail/phone.animation'
 
-import './js/phone_list/phone_list.module'
-import './js/phone_list/phone_list.controller'
-import './js/phone_list/phone_list.component'
-
 bootstrap( PhonecatApp );
 

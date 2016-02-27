@@ -11,7 +11,7 @@ export class PhoneListComponent implements OnInit{
   orderProp: string = 'age';
 
   constructor(
-    @Inject('Phone') private phoneSvc: PhoneService
+    @Inject( PhoneService ) private phoneSvc: PhoneService
   ){}
 
   ngOnInit(){

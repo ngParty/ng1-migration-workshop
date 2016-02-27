@@ -33,14 +33,10 @@
     "port": "9000"
   },
   "scripts": {
-    "tsc:init": "tsc --init",
-    "typings": "typings",
     "clean": "rm -rf ts-output",
-    "prestart": "npm install",
-    "start": "webpack-dev-server --port $npm_package_config_port --hot --inline --progress --profile --colors --watch --display-error-details --display-cached --content-base app/",
-    "pretest": "npm install",
-    "test": "NODE_ENV=test karma start karma.conf.js",
-    "test:watch": "NODE_ENV=test karma start karma.conf.js --auto-watch --no-single-run",
+    "start": "webpack-dev-server --port 9000 --watch --colors --inline --hot --content-base app/",
+    "test": "karma start karma.conf.js",
+    "test:watch": "karma start karma.conf.js --auto-watch --no-single-run",
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",

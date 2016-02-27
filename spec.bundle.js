@@ -11,7 +11,7 @@
 require('angular');
 
 // Built by the core Angular team for mocking dependencies
-require('angular-mocks');
+require('angular-mocks/ngMock');
 
 // We use the context method on `require` which Webpack created
 // in order to signify which files we actually want to require or import.
